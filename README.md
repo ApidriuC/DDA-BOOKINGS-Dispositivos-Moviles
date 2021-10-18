@@ -7,3 +7,12 @@ De acuerdo a esto, se plantea la siguiente pregunta de investigación:
 - ¿Cómo evitar la aglomeración en los lugares de trabajo sin obstaculizar su correcto funcionamiento teniendo en cuenta las distintas medidas de bioseguridad impuestas por el estado? 
 
 Así es como surge el objetivo de desarrollar un prototipo software orientado al SO Android que permita realizar y gestionar reservas de manera organizada para evitar las aglomeraciones en lugares de trabajo, mediante el framework de código abierto Flutter. 
+
+# Secciones deL aplicativo móvil
+## Login
+
+## Home
+
+## Bookigs
+
+## Contact
