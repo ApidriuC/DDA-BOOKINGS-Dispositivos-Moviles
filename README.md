@@ -14,7 +14,7 @@ De acuerdo a esto, se plantea la siguiente pregunta de investigación:
 
 Así es como surge el objetivo de desarrollar un prototipo software orientado al SO Android que permita realizar y gestionar reservas de manera organizada para evitar las aglomeraciones en lugares de trabajo, mediante el framework de código abierto Flutter. 
 
-# Secciones deL aplicativo móvil
+# Secciones del aplicativo móvil
 ## Login
 
 ## Home
