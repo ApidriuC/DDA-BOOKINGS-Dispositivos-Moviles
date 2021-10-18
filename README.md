@@ -19,6 +19,6 @@ Así es como surge el objetivo de desarrollar un prototipo software orientado al
 
 ## Home
 
-## Bookigs
+## Bookings
 
 ## Contact
