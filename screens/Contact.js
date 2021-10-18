@@ -5,7 +5,7 @@ const Contact = ({navegation}) => {
     return (
         <View style = {styles.container}>
             <Text>
-                Contact
+                Hola, Contact
             </Text>
         </View>
     );
