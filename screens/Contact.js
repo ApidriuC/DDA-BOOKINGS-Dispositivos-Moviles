@@ -9,7 +9,6 @@ import {
   TouchableOpacity,
 } from "react-native";
 
-<<<<<<< HEAD
 const height = Dimensions.get("window").height;
 const width = Dimensions.get("window").width;
 
@@ -65,20 +64,11 @@ const Contact = () => {
               </View>
             </View>
           </View>
-=======
-const Contact = ({navegation}) => {
-    return (
-        <View style = {styles.container}>
-            <Text>
-                Hola, Contact
-            </Text>
->>>>>>> 1a541afeb567e54c952a8dc2e535104a02ba3968
         </View>
       </ScrollView>
     </View>
   );
 };
-
 export default Contact;
 
 const styles = StyleSheet.create({
