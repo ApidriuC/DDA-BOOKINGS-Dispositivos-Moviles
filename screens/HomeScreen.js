@@ -8,15 +8,22 @@ import {
   ScrollView,
   Image,
 } from "react-native";
+import { useNavigation } from "@react-navigation/core";
 
 const HomeScreen = () => {
+  const navigation = useNavigation();
   return (
-    <View style = {styles.todo}>
+    <View style={styles.todo}>
       <KeyboardAvoidingView style={styles.container} behavior="height">
         <ScrollView>
           <View style={styles.registerForm}>
             <Text style={styles.user}>Bienvenido!{}</Text>
-            <TouchableOpacity style={styles.User}>
+            <TouchableOpacity
+              style={styles.User}
+              onPress={() => {
+                navigation.navigate("User");
+              }}
+            >
               <Image
                 style={styles.imagenuser}
                 source={require("../assets/User.png")}
@@ -313,10 +320,10 @@ const styles = StyleSheet.create({
   buttomPart: {
     flex: 1,
   },
-  todo:{
+  todo: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: '#FFFF'
-},
+    alignItems: "center",
+    justifyContent: "center",
+    backgroundColor: "#FFFF",
+  },
 });

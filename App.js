@@ -14,6 +14,7 @@ import {
 import AppLoading from "expo-app-loading";
 import Bookings from "./screens/Bookings";
 import Contact from "./screens/Contact";
+import User from "./screens/User";
 
 
 const Stack = createNativeStackNavigator();
@@ -36,7 +37,7 @@ export default function App() {
             component={LoginScreen}
           />
           <Stack.Screen
-            options={{ headerShown: true }}
+            options={{ headerShown: false }}
             name="Home"
             component={HomeScreen}
           />
@@ -49,6 +50,11 @@ export default function App() {
             options={{ headerShown: true }}
             name="Contact"
             component={Contact}
+          />
+          <Stack.Screen
+            options={{ headerShown: true }}
+            name="User"
+            component={User}
           />
           <Stack.Screen name="Register" component={RegistrationScreen} />
         </Stack.Navigator>
