@@ -11,8 +11,9 @@ import {
 
 const HomeScreen = () => {
   return (
-    <KeyboardAvoidingView style={styles.container} behavior="height">
-      <ScrollView>
+    <View style = {styles.todo}>
+      <KeyboardAvoidingView style={styles.container} behavior="height">
+        <ScrollView>
           <View style={styles.registerForm}>
             <Text style={styles.user}>Bienvenido!{}</Text>
             <TouchableOpacity style={styles.User}>
@@ -100,7 +101,8 @@ const HomeScreen = () => {
             </View>
           </View>
         </ScrollView>
-    </KeyboardAvoidingView>
+      </KeyboardAvoidingView>
+    </View>
   );
 };
 
@@ -242,7 +244,8 @@ const styles = StyleSheet.create({
   MascarillaNegra: {
     marginLeft: 10,
     marginTop: 30,
-    width: 200,
+    marginRight: 10,
+    width: 160,
     height: 300,
     alignItems: "center",
     borderRadius: 30,
@@ -258,7 +261,7 @@ const styles = StyleSheet.create({
   BarbaCompleta: {
     marginLeft: 10,
     marginTop: 10,
-    width: 200,
+    width: 160,
     height: 200,
     alignItems: "center",
     borderRadius: 30,
@@ -274,7 +277,7 @@ const styles = StyleSheet.create({
   Perfilado: {
     marginLeft: 10,
     marginTop: 10,
-    width: 200,
+    width: 160,
     height: 200,
     alignItems: "center",
     borderRadius: 30,
@@ -292,7 +295,7 @@ const styles = StyleSheet.create({
     flexDirection: "column",
   },
   User: {
-    marginLeft: 340,
+    marginLeft: 330,
     position: "absolute",
     marginTop: 40,
     alignItems: "center",
@@ -310,4 +313,10 @@ const styles = StyleSheet.create({
   buttomPart: {
     flex: 1,
   },
+  todo:{
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: '#FFFF'
+},
 });

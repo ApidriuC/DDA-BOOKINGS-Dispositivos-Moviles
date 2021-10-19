@@ -12,6 +12,9 @@ import {
   Roboto_300Light,
 } from "@expo-google-fonts/roboto";
 import AppLoading from "expo-app-loading";
+import Bookings from "./screens/Bookings";
+import Contact from "./screens/Contact";
+
 
 const Stack = createNativeStackNavigator();
 
@@ -36,6 +39,16 @@ export default function App() {
             options={{ headerShown: true }}
             name="Home"
             component={HomeScreen}
+          />
+          <Stack.Screen
+            options={{ headerShown: true }}
+            name="Bookings"
+            component={Bookings}
+          />
+          <Stack.Screen
+            options={{ headerShown: true }}
+            name="Contact"
+            component={Contact}
           />
           <Stack.Screen name="Register" component={RegistrationScreen} />
         </Stack.Navigator>

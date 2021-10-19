@@ -1,17 +1,17 @@
 import React from "react";
 import { View, StyleSheet } from "react-native";
 
-const Bookings = () => {
+const User = () => {
     return (
         <View style = {styles.container}>
             <Text>
-                Bookings
+                User
             </Text>
         </View>
     );
 };
 
-export default Bookings;
+export default User;
 
 const styles = StyleSheet.create({
     container:{
