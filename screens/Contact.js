@@ -7,6 +7,7 @@ import {
   Dimensions,
   Image,
   TouchableOpacity,
+  Linking
 } from "react-native";
 
 const height = Dimensions.get("window").height;
@@ -30,7 +31,7 @@ const Contact = () => {
             <View style={styles.imagenes1}>
               <View style={styles.imagenes}>
                 <View>
-                  <TouchableOpacity style={styles.botton1}>
+                  <TouchableOpacity style={styles.botton1} onPress={ ()=>{ Linking.openURL('https://api.whatsapp.com/send/?phone=573184064043&text&app_absent=0')}}>
                     <Text style={styles.TextoWsp}>WhatsApp:</Text>
                     <Image
                       style={styles.FotosWsp}
@@ -38,7 +39,7 @@ const Contact = () => {
                     />
                   </TouchableOpacity>
                 </View>
-                <TouchableOpacity style={styles.botton1}>
+                <TouchableOpacity style={styles.botton1} onPress={ ()=>{ Linking.openURL('mailto:andresfloncam@gmail.com')}}>
                   <Text style={styles.TextoCorreo}>Correo:</Text>
                   <Image
                     style={styles.FotosCorreo}
@@ -46,15 +47,15 @@ const Contact = () => {
                   />
                 </TouchableOpacity>
               </View>
-              <View style={styles.imagenes}>
-                <TouchableOpacity style={styles.botton1}>
+              <View style={styles.imagenes} >
+                <TouchableOpacity style={styles.botton1} onPress={ ()=>{ Linking.openURL('https://www.instagram.com/apidriuc/?hl=es')}}>
                   <Text style={styles.TextoRedes}>Instagram:</Text>
                   <Image
                     style={styles.FotosIg}
                     source={require("../assets/ig.png")}
                   />
                 </TouchableOpacity>
-                <TouchableOpacity style={styles.botton1}>
+                <TouchableOpacity style={styles.botton1} onPress={ ()=>{ Linking.openURL('https://www.facebook.com/ApidriuC/')}}>
                   <Text style={styles.TextoRedes}>Facebook:</Text>
                   <Image
                     style={styles.FotosFb}
