@@ -88,8 +88,9 @@ const Bookings = () => {
                                 value={date}
                                 mode={mode}
                                 is24Hour={true}
-                                display="default"
+                                display="spinner"
                                 onChange={onChange}
+                                value={new Date()}
                             />
                         )}
                     </View>
